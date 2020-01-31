@@ -1,17 +1,11 @@
-puts 'bonjonr je suis '
-puts' vour voule qelle pizza'
-nom = gets
-  if nom == Anchois&&Andouille&&Champignon
-  puts 'vour voule une'
-  puts nom
-  oui = gets
-  if oui  == "oui"
-    puts nom
-    puts 'quelle Ingredients voule vour'
-    Ingredients = gets
-    puts Ingredients
+# coding: utf-8
+puts "vour voule qelle pizza"
 
-    puts" vourier vour din pasiente
-    vortre pizza et prete"
-    end
+nom = gets.chomp # cette ligne récupère l'entrée utilisateur sans le retour à la ligne
+array = ["anchois","andoilles","champignon"] # créer un tableau. Position 0, 1, 2. array[0] => anchois
+array.each do |list| # Tu parcours ton tabeau. Pour chaque tour list = array[pos]
+  if nom == list
+    puts "D'accord nous avons bien enregisté votre commande. Veuillez patienter le temps de la cuisson"
+    break
+  end
 end
